@@ -1,0 +1,229 @@
+@import url("https://www.w3schools.com/css/css_font.asp");
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#Logo{
+    width: 150px;
+    margin:0;
+    margin-top: -10px;
+    position: absolute;  
+}
+header{    
+    width:100%;
+    background-color: orange;
+}
+.login-register {
+    position: absolute;
+    top: 4%;
+    left: 90%;
+    width: 8%;
+    justify-content: space-between;
+}
+.login-register button{
+    width: 100%;
+    border-radius: 50px;
+    background-color:tomato;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: .5s;
+}
+.login-register button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+.navigation {
+    font-size: 30px;
+    width: 1000px;
+    height: 140px;
+    margin-left: 22%;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative; 
+}
+
+.navigation a {
+    margin-top: 1%;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    position: relative; 
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; 
+    left: 0%; 
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+main {
+    background-color: rgb(235, 235, 235);
+    padding-bottom: 2%;
+}
+.imagem-toda{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.busca {
+    width: 30%;
+    height: auto;
+    margin-left: 34%;
+    margin-top: -14%;
+    position: absolute;
+}
+#MuralReceitaButton {
+    width: 100%;
+    height: auto;
+    margin-top: -1.5%;
+    display: flex;   
+}
+#MuralReceitaButton button:hover{   
+    background-color:  #ff8717;
+    color: white;
+}
+.mural,
+.receita {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    justify-content: space-between;
+    border-top: none;
+    margin-left: 20.5%;
+    background-color: #ee7300;
+    color: black;
+    cursor: pointer;
+    font-size: 38px;
+    border-top: none;
+}
+.mural{
+
+}
+.receita {
+}
+#sugestao{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding-left: 1%;
+    justify-content: center;
+    height: 2%;
+    text-decoration: underline;
+    font-size: 300%;
+}
+.duasListas{
+    background-color: rgb(235, 235, 235);
+    width: 80%;
+    padding: 0;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 13%;
+}
+#listabolo, #listapao {
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0px 10px 8px lightgray;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+#listabolo{
+    width: 22%;
+    display: flex;
+    align-items: left;
+    margin-left: 19%;
+}
+#listabolo a{
+    text-decoration: underline;
+    color: black;
+}
+#listapao{
+    width: 21.5%;
+    padding: 0;
+    margin-right: 10%;
+    margin-left: 60%;
+    margin-top: -17.8%;
+}
+#listapao a{
+    text-decoration: underline;
+    color: black;
+}
+.imgbolo{
+    width: 99.2%;
+    padding-top: 0.8%;
+    padding-left: 0.8%;
+    transition: transform .5s;
+
+}
+.imgbolo:hover{
+    transform:scale(1.1,1.1);
+
+}
+.imgpao{
+    width: 99.2%;
+    padding-top: 0.8%;
+    padding-left: 0.8%;
+    transition: transform .5s;
+}
+.imgpao:hover{
+    transform:scale(1.1,1.1);
+}
+.descricaoBolo, .descricaoPao{
+    margin-top: 0.7%;
+    margin-left: 2%;
+}
+.nome1, .nome2 {
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+footer {
+    background-color: rgb(14, 14, 14);
+    color: #ffffff;
+    padding: 2%;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
